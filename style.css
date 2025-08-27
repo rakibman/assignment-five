@@ -5,7 +5,7 @@
 }
 /* nav width  */
 .nav-section{
-    width:1240px;
+    max-width:1240px;
     max-height: 100px;
     margin: 0 auto ;
 }
