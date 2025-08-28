@@ -3,14 +3,18 @@
 ### 6. Answer the following questions clearly:
 
 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
+
 ## Ans =>
  **getElementById** এটা ব্যাবহার করা হয় সুধু একটা টেগ বা স্পান খোজার জন্য ।
 
  **getElementsByClassName** এটা ব্যাবহার করা হয় অনেক গুলা টেগ কে খোজে তার মধ্যে লোপ চালিয়ে তার মধ্যের ইভেন্ট এড করা বা ইনার টেক্সট এর  জন্য। 
+
 **querySelector / querySelectorAll** এটা ব্যাবহার করা হয় document থেকে কোনো Element এ খোঁজতে এইটা একটা input নেবে সেটা Document এ খোজবে এবং টা অণুযায়ী return করবে । 
+
 2. How do you **create and insert a new element into the DOM**?
 ## Ans =>
 আমরা চাইলেই নতুন element তৈরি করতে পারি document.creatElement("div") ব্যাবহার করে । 
+
 3. What is **Event Bubbling** and how does it work?
 ## Ans =>
 মনে করি আমাদের আমার চাচার ছেলের নাম দরকার তখন আমি কি করব প্রথমে আমি আমার বাবার কাছে যাব 
