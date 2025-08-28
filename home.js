@@ -24,7 +24,7 @@ let count3 = 20;
 for (let cardButton of cardButtons) {
   cardButton.addEventListener("click", function () {
     if (navCoin < 20) {
-      alert("❌ You don't have enough coins.");
+      alert("❌ You don't have enough coins for call.");
       return;
     }
     // travarce for finding card title and number
