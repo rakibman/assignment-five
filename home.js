@@ -71,5 +71,8 @@ for (let copyBtn of copyBtns) {
   copyBtn.addEventListener("click", function () {
     count2++;
     getElement("copy-Count").innerText = count2;
+    const hotline = copyBtn.parentNode.parentNode.children[3].innerText;
+    // console.log(hotline);
+    navigator.clipboard.writeText(hotline);
   });
 }
