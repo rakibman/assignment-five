@@ -36,7 +36,7 @@
     <!-- hdader section starts -->
     <header class="">
       <!-- nav section starts  -->
-      <nav class="md:nav-section m-auto px-2.5 py-3.5   md:flex justify-between items-center  md:px-6 md:py-3">
+      <nav class="md:max-w-[1240px] max-h[100px]  md:m-auto px-2.5 py-3.5   md:flex justify-between items-center  md:px-6 md:py-3">
         <div class="flex justify-center items-center gap-2">
           <img src="./assets/logo.png" class="max-w-14" alt="" />
           <div class="">
@@ -46,8 +46,8 @@
         </div>
           <div class="flex gap-3 justify-center items-center">
             <button class="bg-[#41FF6B1A] gap-2.5  md:w-24 flex justify-center items-center px-2 md:px-2.5 py-2 md:py-3 rounded-[50px]"><span id="redhart">0</span><img src="./assets/heart.png" class="md:w-6 w-4" alt=""></button>
-            <button class="bg-[#41FF6B1A] gap-2.5  md:w-24 flex justify-center items-center px-2 md:px-2.5 py-2 md:py-3 rounded-[50px]"><span class="">100</span><img src="./assets/coin.png" class="w-6" alt=""></button>
-            <button class="bg-[#00A63E]  w-16 md:w-24 flex justify-center items-center md:px-2.5 px-2 md:py-3 py-2 rounded-[50px]"><p><span>2 </span>Copy</p></button>
+            <button class="bg-[#41FF6B1A] gap-2.5  md:w-24 flex justify-center items-center px-2 md:px-2.5 py-2 md:py-3 rounded-[50px]"><span id="callCoin">100</span><img src="./assets/coin.png" class="w-6" alt=""></button>
+            <button class="bg-[#00A63E]  w-16 md:w-24 flex justify-center items-center md:px-2.5 px-2 md:py-3 py-2 rounded-[50px]"><p><span class="mr-1.5"  id="copy-Count">0</span><span>Copy</span></p></button>
           </div>
          </div>
       </nav>
@@ -56,7 +56,7 @@
     <main class="bg-[#f5fff6]">
       <!-- banner section  -->
       <section
-        class=" md:max-w[1000px] banner-section bg-gradient-to-r from-[#006747] to-[#013223] p-2.5"
+        class=" md:max-w[1000px] banner-section bg-gradient-to-l from-[#013122] via-[#006747] to-[#013223] p-2.5"
       >
         <img src="./assets/logo-dark.png" class="md:w-[92px] w-[50px] m-auto" alt="" />
 
@@ -77,7 +77,7 @@
           <!-- left card section  -->
           <div class="md:col-span-9 grid md:grid-cols-3 gap-y-2 gap-x-3">
             <!-- card 1 -->
-            <div class="bg-white w-[290px] p-2.5 rounded-[12px] shadow-xl">
+            <div class="bg-white w-[290px] p-3 rounded-[12px] shadow-xl">
               <div class="flex justify-between items-center mb-7">
                 <div>
                   <img
@@ -86,11 +86,11 @@
                     alt=""
                   />
                 </div>
-                <button><i class="fa-regular fa-heart cardHeartbtn" id=""></i></button>
+                <button><i class="fa-regular fa-heart cardHeartbtn text-[23px]" id=""></i></button>
               </div>
-              <h1 class="text-[17px] font-bold">National Emergency Number</h1>
-              <p class="text-[14px] text-[#5C5C5C]">National Emergency</p>
-              <h1 class="mt-3 text-[20px] font-bold">999</h1>
+                <h1 class="text-[17px] font-bold">National Emergency Number</h1>
+                <p class="text-[14px] text-[#5C5C5C]">National Emergency</p>
+                <h1 class="mt-3 text-[20px] font-bold">999</h1>
               <button
                 class="border-[1px] text-[#5C5C5C] border-gray-400 w-fit p-1.5 rounded-[12px]"
               >
@@ -98,12 +98,12 @@
               </button>
               <div class="flex gap-2 mt-6">
                 <button
-                  class="w-full border-[1px] border-gray-400 p-1.5 rounded-[5px]"
+                  class="w-full border-[1px] border-gray-400 p-1.5 rounded-[5px] cardCopyBtn"
                 >
                   <i class="fa-solid fa-copy "></i>Copy
                 </button>
                 <button
-                  class="w-full border-[1px] text-white border-gray-400 bg-[#00a63e] p-1.5 rounded-[5px]"
+                  class="w-full border-[1px] text-white border-gray-400 bg-[#00a63e] p-1.5 rounded-[5px] callBtn"
                 >
                   <i class="fa-solid fa-phone "></i>Call
                 </button>
@@ -119,9 +119,10 @@
                     alt=""
                   />
                 </div>
-                <button><i class="fa-regular fa-heart cardHeartbtn"></i></button>
+                <button><i class="fa-regular fa-heart cardHeartbtn text-[23px]"></i></button>
               </div>
-              <h1 class="text-[17px] font-bold">Police Helpline Number</h1>
+
+                <h1 class="text-[17px] font-bold">Police Helpline Number</h1>
               <p class="text-[14px] text-[#5C5C5C]">Police</p>
               <h1 class="mt-3 text-[20px] font-bold">999</h1>
               <button
@@ -131,12 +132,12 @@
               </button>
               <div class="flex gap-2 mt-6">
                 <button
-                  class="w-full border-[1px] border-gray-400 p-1.5 rounded-[5px]"
+                  class="w-full border-[1px] border-gray-400 p-1.5 rounded-[5px] cardCopyBtn"
                 >
                   <i class="fa-solid fa-copy"></i>Copy
                 </button>
                 <button
-                  class="w-full border-[1px] text-white border-gray-400 bg-[#00a63e] p-1.5 rounded-[5px]"
+                  class="w-full border-[1px] text-white border-gray-400 bg-[#00a63e] p-1.5 rounded-[5px] callBtn"
                 >
                   <i class="fa-solid fa-phone "></i>Call
                 </button>
@@ -152,11 +153,13 @@
                     alt=""
                   />
                 </div>
-                <button><i class="fa-regular fa-heart cardHeartbtn"></i></button>
+                <button><i class="fa-regular fa-heart cardHeartbtn text-[23px]"></i></button>
               </div>
-              <h1 class="text-[17px] font-bold">Fire Service Number</h1>
+
+                <h1 class="text-[17px] font-bold">Fire Service Number</h1>
               <p class="text-[14px]  text-[#5C5C5C]">Fire Service</p>
               <h1 class="mt-3 text-[20px] font-bold">999</h1>
+
               <button
                 class="border-[1px] text-[#5C5C5C] border-gray-400 w-fit p-1.5 rounded-[12px]"
               >
@@ -164,12 +167,12 @@
               </button>
               <div class="flex gap-2 mt-6">
                 <button
-                  class="w-full border-[1px] border-gray-400 p-1.5 rounded-[5px]"
+                  class="w-full border-[1px] border-gray-400 p-1.5 rounded-[5px] cardCopyBtn"
                 >
                   <i class="fa-solid fa-copy"></i>Copy
                 </button>
                 <button
-                  class="w-full border-[1px] text-white border-gray-400 bg-[#00a63e] p-1.5 rounded-[5px]"
+                  class="w-full border-[1px] text-white border-gray-400 bg-[#00a63e] p-1.5 rounded-[5px] callBtn"
                 >
                   <i class="fa-solid fa-phone "></i>Call
                 </button>
@@ -185,7 +188,7 @@
                     alt=""
                   />
                 </div>
-                <p><i class="fa-regular fa-heart cardHeartbtn"></i></p>
+                <p><i class="fa-regular fa-heart cardHeartbtn text-[23px]"></i></p>
               </div>
               <h1 class="text-[17px] font-bold">Ambulance Service</h1>
               <p class="text-[14px] text-[#5C5C5C]">Ambulance</p>
@@ -202,7 +205,7 @@
                   <i class="fa-solid fa-copy"></i>Copy
                 </button>
                 <button
-                  class="w-full border-[1px] text-white border-gray-400 bg-[#00a63e] p-1.5 rounded-[5px]"
+                  class="w-full border-[1px] text-white border-gray-400 bg-[#00a63e] p-1.5 rounded-[5px] callBtn"
                 >
                   <i class="fa-solid fa-phone "></i>Call
                 </button>
@@ -218,7 +221,7 @@
                     alt=""
                   />
                 </div>
-                <p><i class="fa-regular fa-heart cardHeartbtn"></i></p>
+                <p><i class="fa-regular fa-heart cardHeartbtn text-[23px]"></i></p>
               </div>
               <h1 class="text-[17px] font-bold">Women & Child Helpline</h1>
               <p class="text-[14px] text-[#5C5C5C]">Women & Child Helpline</p>
@@ -235,7 +238,7 @@
                   <i class="fa-solid fa-copy"></i>Copy
                 </button>
                 <button
-                  class="w-full border-[1px] text-white border-gray-400 bg-[#00a63e] p-1.5 rounded-[5px]"
+                  class="w-full border-[1px] text-white border-gray-400 bg-[#00a63e] p-1.5 rounded-[5px] callBtn"
                 >
                   <i class="fa-solid fa-phone "></i>Call
                 </button>
@@ -251,7 +254,7 @@
                     alt=""
                   />
                 </div>
-                <p><i class="fa-regular fa-heart cardHeartbtn"></i></p>
+                <p><i class="fa-regular fa-heart cardHeartbtn text-[23px]"></i></p>
               </div>
               <h1 class="text-[17px] font-bold">Anti-Corruption Helpline</h1>
               <p class="text-[14px] text-[#5C5C5C]">Anti-Corruption</p>
@@ -268,7 +271,7 @@
                   <i class="fa-solid fa-copy"></i>Copy
                 </button>
                 <button
-                  class="w-full border-[1px] text-white border-gray-400 bg-[#00a63e] p-1.5 rounded-[5px]"
+                  class="w-full border-[1px] text-white border-gray-400 bg-[#00a63e] p-1.5 rounded-[5px] callBtn"
                 >
                   <i class="fa-solid fa-phone "></i>Call
                 </button>
@@ -284,7 +287,7 @@
                     alt=""
                   />
                 </div>
-                <p><i class="fa-regular fa-heart cardHeartbtn"></i></p>
+                <p><i class="fa-regular fa-heart cardHeartbtn text-[23px]"></i></p>
               </div>
               <h1 class="text-[17px] font-bold">Electricity Helpline</h1>
               <p class="text-[14px] text-[#5C5C5C]">Electricity Outage</p>
@@ -301,7 +304,7 @@
                   <i class="fa-solid fa-copy"></i>Copy
                 </button>
                 <button
-                  class="w-full border-[1px] text-white border-gray-400 bg-[#00a63e] p-1.5 rounded-[5px]"
+                  class="w-full border-[1px] text-white border-gray-400 bg-[#00a63e] p-1.5 rounded-[5px] callBtn"
                 >
                   <i class="fa-solid fa-phone "></i>Call
                 </button>
@@ -317,7 +320,7 @@
                     alt=""
                   />
                 </div>
-                <p><i class="fa-regular fa-heart cardHeartbtn"></i></p>
+                <p><i class="fa-regular fa-heart cardHeartbtn text-[23px]"></i></p>
               </div>
               <h1 class="text-[17px] font-bold">Brac Helpline</h1>
               <p class="text-[14px] text-[#5C5C5C]">Brac</p>
@@ -334,7 +337,7 @@
                   <i class="fa-solid fa-copy"></i>Copy
                 </button>
                 <button
-                  class="w-full border-[1px] text-white border-gray-400 bg-[#00a63e] p-1.5 rounded-[5px]"
+                  class="w-full border-[1px] text-white border-gray-400 bg-[#00a63e] p-1.5 rounded-[5px] callBtn"
                 >
                   <i class="fa-solid fa-phone "></i>Call
                 </button>
@@ -350,7 +353,7 @@
                     alt=""
                   />
                 </div>
-                <p><i class="fa-regular fa-heart cardHeartbtn"></i></p>
+                <p><i class="fa-regular fa-heart cardHeartbtn text-[23px]"></i></p>
               </div>
               <h1 class="text-[17px] font-bold">Bangladesh Railway Helpline</h1>
               <p class="text-[14px] text-[#5C5C5C]">Bangladesh Railway</p>
@@ -367,7 +370,7 @@
                   <i class="fa-solid fa-copy"></i>Copy
                 </button>
                 <button
-                  class="w-full border-[1px] text-white border-gray-400 bg-[#00a63e] p-1.5 rounded-[5px]"
+                  class="w-full border-[1px] text-white border-gray-400 bg-[#00a63e] p-1.5 rounded-[5px] callBtn"
                 >
                   <i class="fa-solid fa-phone "></i>Call
                 </button>
@@ -383,22 +386,23 @@
               <div class="flex justify-between items-center">
                 <h1 class="font-semibold"><i class="fa-regular fa-clock"></i> Call History</h1>
                 <button
-                  class="w-[70px] bg-[#00A63E] p-2 rounded-[20px] text-white font-bold"
+                  id="clearButton" class="w-[70px] bg-[#00A63E] p-2 rounded-[20px] text-white font-bold"
                 >
                   Clear
                 </button>
               </div>
               <!-- history section start  -->
 
-               <div
-                class="flex justify-between items-center bg-gray-100 p-3 rounded-[8px]"
+               <div id="history-container">
+                <!-- <div
+                 class=" flex justify-between items-center bg-gray-100 p-3 rounded-[8px] mb-2"
               >
                 <div>
                   <h1 class="text-[15px] font-bold">Fire Service Number</h1>
                   <p class="text-[#5c5c5c]">999</p>
                 </div>
                 <div><p>11:36:58 AM</p></div>
-              </div>  
+              </div>  -->
           </div>
           <!-- hidden for lg device  -->
           <div class="md:hidden block">
@@ -414,22 +418,17 @@
                   <div class="flex justify-between items-center">
                     <h1><i class="fa-regular fa-clock"></i> Call History</h1>
                     <button
-                      class="w-[70px] bg-[#00A63E] p-2 rounded-[20px] text-white font-bold"
+                     id="" class="w-[70px] bg-[#00A63E] p-2 rounded-[20px] text-white font-bold"
                     >
-                      Clear
+                      <p>Clear</p>
                     </button>
                   </div>
-                  <!-- history section start  -->
+                  <!-- history section start for small -->
     
                    <div
-                    class="flex justify-between items-center bg-gray-100 p-3 rounded-[8px]"
-                  >
-                    <div>
-                      <h1 class="text-[15px] font-bold">Fire Service Number</h1>
-                      <p class="text-[#5c5c5c]">999</p>
-                    </div>
-                    <div><p>11:36:58 AM</p></div>
-                  </div>   
+                    class="flex justify-between items-center bg-gray-100 p-3 rounded-[8px] "
+                  > 
+                    </div>   
               </div>
           </ul>
         </div>
