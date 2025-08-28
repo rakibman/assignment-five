@@ -24,22 +24,31 @@ let count3 = 20;
 for (let cardButton of cardButtons) {
   cardButton.addEventListener("click", function () {
     if (navCoin < 20) {
-      alert("no balance");
+      alert("❌ You don't have enough coins.");
       return;
     }
-    alert("📞Calling in police 999...");
+    // travarce for finding card title and number
+
+    const title = cardButton.parentNode.parentNode.children[1].innerText;
+    const number = cardButton.parentNode.parentNode.children[3].innerText;
+
+    // time printin feture section
+    const Time = new Date();
+    const time = Time.toLocaleTimeString();
+    // alert section start
+    alert("📞 Caling " + title + " " + number + "...");
     let currentCoin = (navCoin -= count3);
     getElement("callCoin").innerText = currentCoin;
-    // class history section start 
+    // class history section start
     const callHistory = getElement("history-container");
     const newHistory = document.createElement("div");
     newHistory.innerHTML = `
              <div class=" flex justify-between items-center bg-gray-100 p-3 rounded-[8px] mb-2 ">
                 <div>
-                  <h1 class="text-[15px] font-bold">Fire Service Number</h1>
-                  <p class="text-[#5c5c5c]">999</p>
+                  <h1 class="text-[15px] font-bold">${title}</h1>
+                  <p class="text-[#5c5c5c]">${number}</p>
                 </div>
-                <div><p>11:36:58 AM</p></div>
+                <div><p>${time}</p></div>
               </div>
     `;
     callHistory.append(newHistory);
@@ -50,7 +59,6 @@ for (let cardButton of cardButtons) {
 const clear = document.getElementById("clearButton");
 clear.addEventListener("click", function () {
   getElement("history-container").innerHTML = "";
-
 });
 
 // Copy button feture
@@ -63,6 +71,5 @@ for (let copyBtn of copyBtns) {
   copyBtn.addEventListener("click", function () {
     count2++;
     getElement("copy-Count").innerText = count2;
-    
   });
 }

@@ -73,9 +73,9 @@
 
       <!-- card section starts  -->
         <section class="card-section ">
-        <div class="grid-cols-12 flex p-2 gap-x-2.5">
+        <div class="md:grid-cols-12 md:flex  p-2  md:gap-x-2.5">
           <!-- left card section  -->
-          <div class="md:col-span-9 grid md:grid-cols-3 gap-y-2 gap-x-3">
+          <div class="md:col-span-9 grid md:grid-cols-3  gap-y-2 gap-x-3">
             <!-- card 1 -->
             <div class="bg-white w-[290px] p-3 rounded-[12px] shadow-xl">
               <div class="flex justify-between items-center mb-7">
@@ -378,62 +378,22 @@
             </div>
           </div>
           <!-- right card section  -->
-           <!-- hidden for small device  -->
           <div class="md:col-span-3 ">
             <div
-              class="bg-white w-[290px] p-2.5 rounded-[12px] shadow-xl space-y-2.5 hidden md:block "
+              class="bg-white w-[290px] p-2.5 rounded-[12px] shadow-xl space-y-2.5 mb-3  "
             >
               <div class="flex justify-between items-center">
                 <h1 class="font-semibold"><i class="fa-regular fa-clock"></i> Call History</h1>
                 <button
-                  id="clearButton" class="w-[70px] bg-[#00A63E] p-2 rounded-[20px] text-white font-bold"
+                  id="clearButton" class="clearButton w-[70px] bg-[#00A63E] p-2 rounded-[20px] text-white font-bold"
                 >
                   Clear
                 </button>
               </div>
-              <!-- history section start  -->
-
-               <div id="history-container">
-                <!-- <div
-                 class=" flex justify-between items-center bg-gray-100 p-3 rounded-[8px] mb-2"
-              >
-                <div>
-                  <h1 class="text-[15px] font-bold">Fire Service Number</h1>
-                  <p class="text-[#5c5c5c]">999</p>
-                </div>
-                <div><p>11:36:58 AM</p></div>
-              </div>  -->
-          </div>
-          <!-- hidden for lg device  -->
-          <div class="md:hidden block">
-            <div class="dropdown dropdown-end  ">
-          <div tabindex="0" role="button" class="btn m-1"><i class="fa-regular fa-clock"></i>History</div>
-          <ul
-            tabindex="0"
-            class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
-          >
-            <div
-                  class="bg-white w-[290px] p-2.5 rounded-[12px] shadow-xl space-y-2.5"
-                >
-                  <div class="flex justify-between items-center">
-                    <h1><i class="fa-regular fa-clock"></i> Call History</h1>
-                    <button
-                     id="" class="w-[70px] bg-[#00A63E] p-2 rounded-[20px] text-white font-bold"
-                    >
-                      <p>Clear</p>
-                    </button>
-                  </div>
-                  <!-- history section start for small -->
-    
-                   <div
-                    class="flex justify-between items-center bg-gray-100 p-3 rounded-[8px] "
-                  > 
-                    </div>   
+              <!-- history section start  --> 
+               <div id="history-container"></div>
               </div>
-          </ul>
-        </div>
-
-          </div>
+          </div>  
         </div>
       </section>
       
