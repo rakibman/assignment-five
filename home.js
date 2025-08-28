@@ -72,7 +72,7 @@ for (let copyBtn of copyBtns) {
     count2++;
     getElement("copy-Count").innerText = count2;
     const hotline = copyBtn.parentNode.parentNode.children[3].innerText;
-    // console.log(hotline);
+    // copy text feture 
     navigator.clipboard.writeText(hotline);
   });
 }
