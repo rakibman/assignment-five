@@ -69,10 +69,12 @@ const navCopyCount = getElement("copy-Count").innerText;
 let count2 = 0;
 for (let copyBtn of copyBtns) {
   copyBtn.addEventListener("click", function () {
+    const numberOfCard = copyBtn.parentNode.parentNode.children[3].innerText;
+    alert("The number has been copied : " + numberOfCard);
     count2++;
     getElement("copy-Count").innerText = count2;
     const hotline = copyBtn.parentNode.parentNode.children[3].innerText;
-    // copy text feture 
+    // copy text feture
     navigator.clipboard.writeText(hotline);
   });
 }
