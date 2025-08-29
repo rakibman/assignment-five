@@ -22,7 +22,8 @@
  আমি সেখান থেকে আমার যেই চাচাত ভাই এর নাম দরকার তার বাবার কাছে যাব,
   তারপর তাকে বলব আপনার বাচ্চাদের লিস্ট দিন তারপর আমি সেখান থেকে আমার,
    যেই চাচাত ভাইয়ের নাম লাগবে তা  আমি নিতে পারব 
-আমারা একটি  Exampone দেখি =>
+   
+আমরা একটি  Exampone দেখি =>
 <!-- const hotline = copyBtn.parentNode.parentNode.children[3].innerText;
 console.log(hotline); -->
 4. What is **Event Delegation** in JavaScript? Why is it useful?
