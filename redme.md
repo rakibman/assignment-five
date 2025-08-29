@@ -5,15 +5,15 @@
 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
 
 ## Ans =>
- **getElementById** এটা ব্যাবহার করা হয় সুধু একটা টেগ বা স্পান খোজার জন্য ।
+ **getElementById** এটা ব্যাবহার করা হয় সুধু একটা টেগ বা স্পান খোজার জন্য । 
 
  **getElementsByClassName** এটা ব্যাবহার করা হয় অনেক গুলা টেগ কে খোজে তার মধ্যে লোপ চালিয়ে তার মধ্যের ইভেন্ট এড করা বা ইনার টেক্সট এর  জন্য। 
 
-**querySelector / querySelectorAll** এটা ব্যাবহার করা হয় document থেকে কোনো Element এ খোঁজতে এইটা একটা input নেবে সেটা Document এ খোজবে এবং টা অণুযায়ী return করবে । 
+**querySelector / querySelectorAll** এটা ব্যাবহার করা হয় document থেকে কোনো **Element** এ খোঁজতে এইটা একটা **input** নেবে সেটা **Document** এ খোজবে এবং টা অণুযায়ী **return** করবে । 
 
 2. How do you **create and insert a new element into the DOM**?
 ## Ans =>
-আমরা চাইলেই নতুন element তৈরি করতে পারি document.creatElement("div") ব্যাবহার করে । 
+আমরা চাইলেই নতুন **element** তৈরি করতে পারি **document.creatElement("div")** ব্যাবহার করে । 
 
 3. What is **Event Bubbling** and how does it work?
 ## Ans =>
@@ -29,7 +29,9 @@ console.log(hotline); -->
 ## Ans =>
 এটা আমারা এক্তা উধারণ এর মাধ্যমে দেখি মনে করি একটা ক্লাসে ২০ জন ছাত্র আছে  স্যার চায় সবার পরা ধরতে কিন্তু স্যার সবাইকে 
 এক এক করে বলতে চান না যে পড়া বল তাই স্যার ক্লাস এর রুল ১  কে বললেন যে তুমি পড়া বল এবং তুমার পড়া সেশ হলে তুমার
-পাশের জন কে বল পড়া বলতে 
+পাশের জন কে বল পড়া বলতে এটা ব্যবহার **usefull** কারন এটা দি কাজ কে অনেক সহজ করা যায় যেমন 
+আমরা যদি একটা টাগ এর ভিতরের **value** পেতে চাই তাহলে **id** বা **class** দিয়ে পেতে হবে যদি **tag**  বেসি হয় তাহলে এটি আর বেশি কষ্ট কর তাই আমরা একটা ভেরিয়াবল বানিয়ে তার ভিতরের  **Event Delegation**
+দিয়ে সেই কাজ সব গুলার জন্য করতে পারি সহজে তাই এটি **useful**
 আমরা একটি উধারন এর মাধ্যমে দেখি =>
 **<!-- const copyBtns = document.getElementsByClassName("cardCopyBtn"); -->
 <!-- for (let copyBtn of copyBtns) {
